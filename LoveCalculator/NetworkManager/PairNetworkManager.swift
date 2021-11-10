@@ -8,6 +8,10 @@
 import Foundation
 
 class PairNetworkManager {
+    private init() {}
+    
+    static let shared = PairNetworkManager()
+    
     var onCompletion: ((CurrentPair) -> Void)?
     func fetchCurrentPair(fname: String, sname: String) {
         let urlString = "https://love-calculator.p.rapidapi.com/getPercentage?sname=\(sname)&fname=\(fname)&rapidapi-key=5cd344ec18mshc20338e900da178p1cdcf0jsn447d8e89590d"

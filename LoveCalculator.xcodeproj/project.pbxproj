@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2040C9F273AC94C00E19856 /* LoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2040C9E273AC94C00E19856 /* LoveButton.swift */; };
+		C237FD5E273ADBCB00DDE088 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237FD5D273ADBCB00DDE088 /* CustomImage.swift */; };
 		C27EDCD327286B9A001966E7 /* PairNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27EDCD227286B9A001966E7 /* PairNetworkManager.swift */; };
 		C27EDCD527286BBC001966E7 /* CurrentPairData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27EDCD427286BBC001966E7 /* CurrentPairData.swift */; };
 		C27EDCD727286DBE001966E7 /* CurrentPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27EDCD627286DBE001966E7 /* CurrentPair.swift */; };
@@ -17,9 +19,13 @@
 		C2B9CB3927281078005047C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B9CB3727281078005047C5 /* Main.storyboard */; };
 		C2B9CB3B2728107A005047C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B9CB3A2728107A005047C5 /* Assets.xcassets */; };
 		C2B9CB3E2728107A005047C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B9CB3C2728107A005047C5 /* LaunchScreen.storyboard */; };
+		C2D8B8E9273AC3AB00FD4489 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8B8E8273AC3AB00FD4489 /* ViewModelType.swift */; };
+		C2D8B8EB273AC45B00FD4489 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8B8EA273AC45B00FD4489 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2040C9E273AC94C00E19856 /* LoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveButton.swift; sourceTree = "<group>"; };
+		C237FD5D273ADBCB00DDE088 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		C27EDCD227286B9A001966E7 /* PairNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairNetworkManager.swift; sourceTree = "<group>"; };
 		C27EDCD427286BBC001966E7 /* CurrentPairData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPairData.swift; sourceTree = "<group>"; };
 		C27EDCD627286DBE001966E7 /* CurrentPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPair.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		C2B9CB3A2728107A005047C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B9CB3D2728107A005047C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2B9CB3F2728107A005047C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D8B8E8273AC3AB00FD4489 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		C2D8B8EA273AC45B00FD4489 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2040C9D273AC82D00E19856 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				C2040C9E273AC94C00E19856 /* LoveButton.swift */,
+				C237FD5D273ADBCB00DDE088 /* CustomImage.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
 		C27EDCD827287E22001966E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +89,17 @@
 		C2B9CB3027281078005047C5 /* LoveCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				C2D8B8E6273AB19A00FD4489 /* Model */,
+				C2B9CB4727281662005047C5 /* View */,
+				C2B9CB4627281657005047C5 /* ViewModel */,
+				C2040C9D273AC82D00E19856 /* Designables */,
+				C2D8B8E5273AB18400FD4489 /* NetworkManager */,
+				C2D8B8E7273AC38F00FD4489 /* Protocols */,
 				C27EDCD827287E22001966E7 /* Extensions */,
-				C2B9CB3F2728107A005047C5 /* Info.plist */,
-				C2B9CB482728166E005047C5 /* Views */,
-				C2B9CB4727281662005047C5 /* View Controllers */,
-				C2B9CB4627281657005047C5 /* Models */,
 				C2B9CB452728164A005047C5 /* Supporting files */,
+				C2B9CB3727281078005047C5 /* Main.storyboard */,
+				C2B9CB3C2728107A005047C5 /* LaunchScreen.storyboard */,
+				C2B9CB3F2728107A005047C5 /* Info.plist */,
 			);
 			path = LoveCalculator;
 			sourceTree = "<group>";
@@ -92,31 +114,45 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
-		C2B9CB4627281657005047C5 /* Models */ = {
+		C2B9CB4627281657005047C5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C27EDCD227286B9A001966E7 /* PairNetworkManager.swift */,
-				C27EDCD427286BBC001966E7 /* CurrentPairData.swift */,
-				C27EDCD627286DBE001966E7 /* CurrentPair.swift */,
+				C2D8B8EA273AC45B00FD4489 /* ViewModel.swift */,
 			);
-			path = Models;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		C2B9CB4727281662005047C5 /* View Controllers */ = {
+		C2B9CB4727281662005047C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C2B9CB3527281078005047C5 /* ViewController.swift */,
 			);
-			path = "View Controllers";
+			path = View;
 			sourceTree = "<group>";
 		};
-		C2B9CB482728166E005047C5 /* Views */ = {
+		C2D8B8E5273AB18400FD4489 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				C2B9CB3C2728107A005047C5 /* LaunchScreen.storyboard */,
-				C2B9CB3727281078005047C5 /* Main.storyboard */,
+				C27EDCD227286B9A001966E7 /* PairNetworkManager.swift */,
 			);
-			path = Views;
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C2D8B8E6273AB19A00FD4489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C27EDCD427286BBC001966E7 /* CurrentPairData.swift */,
+				C27EDCD627286DBE001966E7 /* CurrentPair.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2D8B8E7273AC38F00FD4489 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8B8E8273AC3AB00FD4489 /* ViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +227,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27EDCD327286B9A001966E7 /* PairNetworkManager.swift in Sources */,
+				C2D8B8EB273AC45B00FD4489 /* ViewModel.swift in Sources */,
 				C27EDCD527286BBC001966E7 /* CurrentPairData.swift in Sources */,
+				C237FD5E273ADBCB00DDE088 /* CustomImage.swift in Sources */,
 				C2B9CB3627281078005047C5 /* ViewController.swift in Sources */,
 				C2B9CB3227281078005047C5 /* AppDelegate.swift in Sources */,
+				C2D8B8E9273AC3AB00FD4489 /* ViewModelType.swift in Sources */,
 				C27EDCDA27287E34001966E7 /* presentAlertController.swift in Sources */,
 				C2B9CB3427281078005047C5 /* SceneDelegate.swift in Sources */,
 				C27EDCD727286DBE001966E7 /* CurrentPair.swift in Sources */,
+				C2040C9F273AC94C00E19856 /* LoveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

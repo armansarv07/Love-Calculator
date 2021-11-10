@@ -29,15 +29,5 @@ extension ViewController {
         present(ac, animated: true)
     }
     
-    func perfectCase(sname: String, fname: String) -> Bool {
-        if (sname == "Arman" && fname == "Jamila") || (fname == "Arman" && sname == "Jamila") {
-            return true
-        }
-        
-        if (sname == "Arman" && fname == "Zhamila") || (fname == "Arman" && sname == "Zhamila") {
-            return true
-        }
-        
-        return false
-    }
+   
 }
